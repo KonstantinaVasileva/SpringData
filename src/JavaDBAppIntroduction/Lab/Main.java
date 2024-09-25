@@ -13,7 +13,7 @@ public class Main {
             "         JOIN users_games ug on u.id = ug.user_id\n" +
             "WHERE user_name = ?" +
             "GROUP BY user_id;";
-    private static final String OUTPUT = "User: %s%n%s %s has played %d games\n";
+    private static final String OUTPUT = "User: %s%n    %s %s has played %d games\n";
 
     public static void main(String[] args) throws SQLException {
         Scanner scanner = new Scanner(System.in);
