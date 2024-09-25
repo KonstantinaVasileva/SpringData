@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 public class GetMinionNames {
-    public static final String QUERY = "select  m.name, m.age, v.name from minions m\n" +
+    private static final String QUERY = "select  m.name, m.age, v.name from minions m\n" +
             "JOIN minions_villains mv on m.id = mv.minion_id\n" +
             "join villains v on v.id = mv.villain_id\n" +
             "where v.id = ?;";
