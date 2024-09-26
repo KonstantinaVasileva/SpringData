@@ -22,6 +22,7 @@ public class GetVillainsNames {
             int minionsCount = Integer.parseInt(resultSet.getString("minions_count"));
             System.out.printf(OUTPUT, name, minionsCount);
         }
+        connection.close();
 
     }
 }

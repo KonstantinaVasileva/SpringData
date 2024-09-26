@@ -43,6 +43,8 @@ public class AddMinion {
         addVillainIfNotExist(resultForVillain, connectionSQL, villainName, minionName);
 
         addMinion(connectionSQL, minionName, minionAge, townName, villainName);
+
+        connectionSQL.close();
     }
 
     private static void addMinion(Connection connectionSQL, String minionName, int minionAge, String townName, String villainName) throws SQLException {

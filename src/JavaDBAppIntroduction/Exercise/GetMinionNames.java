@@ -34,5 +34,6 @@ public class GetMinionNames {
         if (i==0){
             System.out.println("No villain with ID %d exists in the database.".formatted(id));
         }
+        connectionSQL.close();
     }
 }
