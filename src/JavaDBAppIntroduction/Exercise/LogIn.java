@@ -10,7 +10,7 @@ public class LogIn {
 
         Properties properties = new Properties();
         properties.setProperty("user", "root");
-        properties.setProperty("password", "123456789");
+        properties.setProperty("password", "****");
 
         return DriverManager.getConnection("jdbc:mysql://localhost:3306/minions_db", properties);
     }
