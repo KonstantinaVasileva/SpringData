@@ -24,13 +24,13 @@ public class PrintAllMinionNames {
         }
         int count = 0;
         int size = minionName.size();
-        while (count <= (size -1) / 2) {
+        while (count <= (size - 1) / 2) {
             System.out.println(minionName.get(count));
             System.out.println(minionName.get(size - 1 - count));
             count++;
         }
 
         System.out.println();
-
+        connectionSQL.close();
     }
 }
